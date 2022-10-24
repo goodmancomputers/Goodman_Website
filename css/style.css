@@ -254,6 +254,16 @@ margin-right: 20px;
     grid-column: 1 / span 2;
 }
 
+.features-head-text{
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.features-head img{
+    animation: slideInFromBotton 1s ease-in;
+}
+
+
+
 /* Docs*/
 .docs-main h3{
     margin: 20px 0;
@@ -270,6 +280,14 @@ margin-right: 20px;
 }
 .docs-main a:hover{
     font-weight: bold;
+}
+
+.docs-head-text{
+    animation: slideInFromRight 1s ease-in;
+}
+
+.docs-head-img{
+    animation: slideInFromLeft 1s ease-in;
 }
 
 /* Footer*/
@@ -327,7 +345,7 @@ margin-right: 20px;
     .stats .grid,
     .cli .grid,
     .cloud .grid,
-    .docs-main .grid
+    .docs-main .grid,
     .features-main .grid{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -335,12 +353,25 @@ margin-right: 20px;
     .showcase{
         height: auto;
     }
+    
     .showcase-text{
         text-align: center;
         margin-top: 40px;
         animation: slideInFromTop 1s ease-in;
         
     }
+
+    .features-text{
+        animation: slideInFromTop 1s ease-in;
+    }
+
+    
+
+    .docs-head-text{
+        animation: slideInFromTop 1s ease-in;
+    }
+
+    
     .showcase-form{
         justify-self: center;
         animation: slideInFromBottom 1s ease-in;
@@ -398,7 +429,12 @@ margin-right: 20px;
     .logo{
         width: 200px;
     }
+
+    .docs-main .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+       
    
-    
+    }
 }
 
