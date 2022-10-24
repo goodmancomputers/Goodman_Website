@@ -349,6 +349,7 @@ margin-right: 20px;
     .features-main .grid{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        justify-content: center;
     }
     .showcase{
         height: auto;
